@@ -22,7 +22,10 @@ steps:
   inputs:
     SonarQube: 'test'
     scannerMode: 'CLI'
-    configMode: 'file'
+    configMode: 'manual'
+    cliProjectKey: 'gt1a18_sonarqube-integration-test'
+    cliProjectName: 'sonarqube-integration-test'
+    cliSources: '.'
 
 - task: SonarQubeAnalyze@5
   inputs:
