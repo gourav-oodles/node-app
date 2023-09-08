@@ -17,15 +17,19 @@ steps:
     
   displayName: 'npm install and start'
 
-
 - task: SonarQubePrepare@5
   inputs:
     SonarQube: 'test'
     scannerMode: 'CLI'
     configMode: 'manual'
-    cliProjectKey: 'sonarqube-integration-test'
+    cliProjectKey: 'gt1a18_sonarqube-integration-test'
     cliProjectName: 'sonarqube-integration-test'
     cliSources: '.'
+    extraProperties: |
+      # Additional properties that will be passed to the scanner, 
+      # Put one key=value per line, example:
+      # sonar.exclusions=**/*.bin
+      sonar.organization=gt1a18
 
 - task: SonarQubeAnalyze@5
   inputs:
