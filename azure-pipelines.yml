@@ -23,7 +23,7 @@ steps:
     SonarQube: 'test'
     scannerMode: 'CLI'
     configMode: 'manual'
-    cliProjectKey: 'gt1a18_sonarqube-integration-test'
+    cliProjectKey: 'sonarqube-integration-test'
     cliProjectName: 'sonarqube-integration-test'
     cliSources: '.'
 
