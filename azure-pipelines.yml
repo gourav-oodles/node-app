@@ -19,7 +19,7 @@ steps:
 
 - task: SonarQubePrepare@5
   inputs:
-    SonarQube: 'test'
+    SonarQube: 'test-token-personal'
     scannerMode: 'CLI'
     configMode: 'manual'
     cliProjectKey: 'gt1a18_sonarqube-integration-test'
